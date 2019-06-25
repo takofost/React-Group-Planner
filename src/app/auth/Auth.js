@@ -3,9 +3,7 @@ import {connect} from 'react-redux';
 import * as userActions from 'app/auth/store/actions';
 import {bindActionCreators} from 'redux';
 import * as Actions from 'app/store/actions';
-import firebaseService from 'app/services/firebaseService';
 import auth0Service from 'app/services/auth0Service';
-import jwtService from 'app/services/jwtService';
 
 class Auth extends Component {
     /*eslint-disable-next-line no-useless-constructor*/
@@ -13,51 +11,11 @@ class Auth extends Component {
     {
         super(props);
 
-        /**
-         * Comment the line if you do not use JWt
-         */
-        this.jwtCheck();
-
-        /**
-         * Comment the line if you do not use Auth0
-         */
         this.auth0Check();
 
-        /**
-         * Comment the line if you do not use Firebase
-         */
-        this.firebaseCheck();
     }
 
-    jwtCheck = () => {
-        jwtService.on('onAutoLogin', () => {
-
-            this.props.showMessage({message: 'Logging in with JWT'});
-
-            /**
-             * Sign in and retrieve user data from Api
-             */
-            jwtService.signInWithToken()
-                .then(user => {
-                    this.props.setUserData(user);
-
-                    this.props.showMessage({message: 'Logged in with JWT'});
-                })
-                .catch(error => {
-                    this.props.showMessage({message: error});
-                })
-        });
-
-        jwtService.on('onAutoLogout', (message) => {
-            if ( message )
-            {
-                this.props.showMessage({message});
-            }
-            this.props.logout();
-        });
-
-        jwtService.init();
-    };
+    
 
     auth0Check = () => {
 
@@ -79,28 +37,7 @@ class Auth extends Component {
         }
     };
 
-    firebaseCheck = () => {
-
-        firebaseService.init();
-
-        firebaseService.onAuthStateChanged(authUser => {
-            if ( authUser )
-            {
-                this.props.showMessage({message: 'Logging in with Firebase'});
-
-                /**
-                 * Retrieve user data from Firebase
-                 */
-                firebaseService.getUserData(authUser.uid).then(user => {
-
-                    this.props.setUserDataFirebase(user, authUser);
-
-                    this.props.showMessage({message: 'Logged in with Firebase'});
-                })
-            }
-        });
-    };
-
+    
     render()
     {
         const {children} = this.props;
