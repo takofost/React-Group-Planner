@@ -60,11 +60,11 @@ let authDB = {
         {
             uuid    : 'XgbuVEXBU6gtSKdbTYR1Zbbby1i3',
             from    : 'custom-db',
-            password: "",
-            role    : "password",
+            password: "password",
+            role    : "staff",
             data    : {
                 'displayName': 'Ken Tran',
-                'photoURL'   : 'assets/images/avatars/Arnold.jpg',
+                'photoURL'   : 'assets/images/avatars/logo-circle-black.jpg',
                 'email'      : 'trank7295@gmail.com',
                 settings     : {
                     layout          : {

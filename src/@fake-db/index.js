@@ -1,5 +1,4 @@
 import mock from './mock';
-import './db/mail-db';
 import './db/todo-db';
 import './db/contacts-db';
 import './db/calendar-db';
