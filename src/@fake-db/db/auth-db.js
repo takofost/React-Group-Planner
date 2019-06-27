@@ -4,7 +4,7 @@ import {FuseUtils} from '@fuse';
 import jwt from 'jsonwebtoken';
 
 const jwtConfig = {
-    "secret"   : "e8bb4199572a38d45e54af941c5abfd9e7b66dc34b2908249f3ba6834d9bc1d9",
+    "secret"   : "some-secret-code-goes-here",
     "expiresIn": "2 days" // A numeric value is interpreted as a seconds count. If you use a string be sure you provide the time units (days, hours, etc)
 };
 
@@ -60,12 +60,12 @@ let authDB = {
         {
             uuid    : 'XgbuVEXBU6gtSKdbTYR1Zbbby1i3',
             from    : 'custom-db',
-            password: "password",
+            password: "staff",
             role    : "staff",
             data    : {
-                'displayName': 'Ken Tran',
-                'photoURL'   : 'assets/images/avatars/logo-circle-black.jpg',
-                'email'      : 'trank7295@gmail.com',
+                'displayName': 'Arnold Matlock',
+                'photoURL'   : 'assets/images/avatars/Arnold.jpg',
+                'email'      : 'staff',
                 settings     : {
                     layout          : {
                         style : 'layout2',
