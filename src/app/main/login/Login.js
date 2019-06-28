@@ -63,7 +63,7 @@ function Login()
                             variant="fullWidth"
                             className="mb-32"
                         >
-                            
+
                             <Tab
                                 icon={<img className="h-40" src="assets/images/logos/auth0.svg" alt="auth0"/>}
                                 className="min-w-0"
@@ -72,7 +72,7 @@ function Login()
                         </Tabs>
 
 
-                        {selectedTab === 2 && <Auth0LoginTab/>}
+                        {selectedTab === 0 && <Auth0LoginTab/>}
 
                         <div className="flex flex-col items-center justify-center pt-32">
                             <span className="font-medium">Don't have an account?</span>
