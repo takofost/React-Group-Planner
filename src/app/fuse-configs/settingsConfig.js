@@ -7,8 +7,7 @@ const settingsConfig = {
     theme           : {
         main   : 'default',
         navbar : 'mainThemeDark',
-        toolbar: 'mainThemeLight',
-        footer : 'mainThemeDark'
+        toolbar: 'mainThemeLight'
     }
 };
 

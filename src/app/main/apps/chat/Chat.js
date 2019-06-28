@@ -223,6 +223,7 @@ function Chat(props)
                             <Icon className="text-24" color="action">send</Icon>
                         </IconButton>
                     </Paper>
+                    
                 </form>
             )}
         </div>
