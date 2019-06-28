@@ -735,28 +735,28 @@ const projectDashboardAppDB = {
                 'T' : [
                     {
                         'id'   : 1,
-                        'title': 'Group Meeting',
-                        'time' : 'In 32 minutes'
+                        'title': 'Present Final Project',
+                        'time' : '10:00 AM'
                     },
                     {
                         'id'   : 2,
-                        'title': 'Coffee Break',
-                        'time' : '10:30 AM'
+                        'title': 'Answer Questions',
+                        'time' : '10:10 AM'
                     },
                     {
                         'id'   : 3,
-                        'title': 'Public Beta Release',
-                        'time' : '11:00 AM'
+                        'title': 'Lunch',
+                        'time' : '11:30 AM'
                     },
                     {
                         'id'   : 4,
-                        'title': 'Lunch',
-                        'time' : '12:10 PM'
+                        'title': 'Final Presentations',
+                        'time' : '12:15 PM'
                     },
                     {
                         'id'   : 5,
-                        'title': 'Dinner with David',
-                        'time' : '17:30 PM'
+                        'title': 'Final Thoughts',
+                        'time' : '2:00 PM'
                     },
                     {
                         'id'   : 6,
