@@ -11,7 +11,6 @@ import Widget1 from './widgets/Widget1';
 import Widget2 from './widgets/Widget2';
 import Widget3 from './widgets/Widget3';
 import Widget4 from './widgets/Widget4';
-import Widget5 from './widgets/Widget5';
 import Widget6 from './widgets/Widget6';
 import Widget7 from './widgets/Widget7';
 import Widget11 from './widgets/Widget11';
@@ -103,7 +102,7 @@ function ProjectDashboardApp(props)
             header={
                 <div className="flex flex-col justify-between flex-1 px-24 pt-24">
                     <div className="flex justify-between items-start">
-                        <Typography className="py-0 sm:py-24" variant="h4">Welcome back, John!</Typography>
+                        <Typography className="py-0 sm:py-24" variant="h4">Welcome to Orchestrate!</Typography>
                         <Hidden lgUp>
                             <IconButton
                                 onClick={(ev) => pageLayout.current.toggleRightSidebar()}
@@ -153,7 +152,6 @@ function ProjectDashboardApp(props)
                     className="w-full border-b-1 px-24"
                 >
                     <Tab className="text-14 font-600 normal-case" label="Home"/>
-                    <Tab className="text-14 font-600 normal-case" label="Budget Summary"/>
                     <Tab className="text-14 font-600 normal-case" label="Team Members"/>
                 </Tabs>
             }
@@ -178,9 +176,6 @@ function ProjectDashboardApp(props)
                             </div>
                             <div className="widget flex w-full sm:w-1/2 md:w-1/4 p-12">
                                 <Widget4 widget={widgets.widget4}/>
-                            </div>
-                            <div className="widget flex w-full p-12">
-                                <Widget5 widget={widgets.widget5}/>
                             </div>
                             <div className="widget flex w-full sm:w-1/2 p-12">
                                 <Widget6 widget={widgets.widget6}/>

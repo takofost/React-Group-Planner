@@ -63,568 +63,7 @@ const projectDashboardAppDB = {
                 }
             },
             'detail': 'You can show some detailed information about this widget in here.'
-        },
-        'widget5'      : {
-            'title'     : 'Github Issues',
-            'ranges'    : {
-                'TW': 'This Week',
-                'LW': 'Last Week',
-                '2W': '2 Weeks Ago'
-            },
-            'mainChart' : {
-                'TW'     : {
-                    labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                    datasets: [
-                        {
-                            type                : 'bar',
-                            label               : 'Issues',
-                            data                : [42, 28, 43, 34, 20, 25, 22],
-                            backgroundColor     : '#42BFF7',
-                            hoverBackgroundColor: '#87cdf7'
-                        },
-                        {
-                            type                : 'bar',
-                            label               : 'Closed issues',
-                            data                : [11, 10, 8, 11, 8, 10, 17],
-                            backgroundColor     : '#c6ecfd',
-                            hoverBackgroundColor: '#d7effd'
-                        }
-                    ]
-                },
-                '2W'     : {
-                    labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                    datasets: [
-                        {
-                            type                : 'bar',
-                            label               : 'Issues',
-                            data                : [37, 32, 39, 27, 18, 24, 20],
-                            backgroundColor     : '#42BFF7',
-                            hoverBackgroundColor: '#87cdf7'
-                        },
-                        {
-                            type                : 'bar',
-                            label               : 'Closed issues',
-                            data                : [9, 12, 9, 12, 7, 8, 16],
-                            backgroundColor     : '#c6ecfd',
-                            hoverBackgroundColor: '#d7effd'
-                        }
-                    ]
-                },
-                'LW'     : {
-                    labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                    datasets: [
-                        {
-                            type                : 'bar',
-                            label               : 'Issues',
-                            data                : [37, 24, 51, 31, 29, 17, 31],
-                            backgroundColor     : '#42BFF7',
-                            hoverBackgroundColor: '#87cdf7'
-                        },
-                        {
-                            type                : 'bar',
-                            label               : 'Closed issues',
-                            data                : [12, 8, 7, 13, 7, 6, 10],
-                            backgroundColor     : '#c6ecfd',
-                            hoverBackgroundColor: '#d7effd'
-                        }
-                    ]
-                },
-                'options': {
-                    responsive         : true,
-                    maintainAspectRatio: false,
-                    legend             : {
-                        display: false
-                    },
-                    tooltips           : {
-                        mode: 'label'
-                    },
-                    scales             : {
-                        xAxes: [
-                            {
-                                stacked           : true,
-                                display           : true,
-                                gridLines         : {
-                                    display: false
-                                },
-                                labels            : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-                                categoryPercentage: 1
-                            }
-                        ],
-                        yAxes: [
-                            {
-                                stacked  : true,
-                                type     : 'linear',
-                                display  : true,
-                                position : 'left',
-                                gridLines: {
-                                    display: false
-                                },
-                                labels   : {
-                                    show: true
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            'supporting': {
-                'created'  : {
-                    'label': 'CREATED',
-                    'count': {
-                        '2W': 48,
-                        'LW': 46,
-                        'TW': 54
-                    },
-                    'chart': {
-                        '2W'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [5, 8, 5, 6, 7, 8, 7],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        'LW'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [6, 3, 7, 5, 5, 4, 7],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        'TW'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [3, 2, 1, 4, 8, 8, 4],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        options: {
-                            legend             : {
-                                display: false
-                            },
-                            maintainAspectRatio: false,
-                            scales             : {
-                                xAxes: [
-                                    {
-                                        display: false
-                                    }
-                                ],
-                                yAxes: [
-                                    {
-                                        display: false
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                },
-                'closed'   : {
-                    'label': 'CLOSED',
-                    'count': {
-                        '2W': 27,
-                        'LW': 31,
-                        'TW': 26
-                    },
-                    'chart': {
-                        'TW'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [6, 3, 7, 5, 5, 4, 7],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        '2W'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [3, 2, 1, 4, 8, 8, 4],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        'LW'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [6, 5, 4, 5, 7, 4, 7],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        options: {
-                            legend             : {
-                                display: false
-                            },
-                            maintainAspectRatio: false,
-                            scales             : {
-                                xAxes: [
-                                    {
-                                        display: false
-                                    }
-                                ],
-                                yAxes: [
-                                    {
-                                        display: false
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                },
-                'reOpened' : {
-                    'label': 'RE-OPENED',
-                    'count': {
-                        '2W': 4,
-                        'LW': 5,
-                        'TW': 2
-                    },
-                    'chart': {
-                        '2W'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [6, 3, 7, 5, 5, 4, 7],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        'LW'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [5, 7, 8, 8, 6, 4, 1],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        'TW'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [3, 2, 1, 4, 8, 8, 4],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        'TW2'  : [
-                            {
-                                'name'  : 'RE-OPENED',
-                                'series': [
-                                    {
-                                        'name' : 'Mon',
-                                        'value': 3
-                                    },
-                                    {
-                                        'name' : 'Tue',
-                                        'value': 2
-                                    },
-                                    {
-                                        'name' : 'Wed',
-                                        'value': 1
-                                    },
-                                    {
-                                        'name' : 'Thu',
-                                        'value': 4
-                                    },
-                                    {
-                                        'name' : 'Fri',
-                                        'value': 8
-                                    },
-                                    {
-                                        'name' : 'Sat',
-                                        'value': 8
-                                    },
-                                    {
-                                        'name' : 'Sun',
-                                        'value': 4
-                                    }
-                                ]
-                            }
-                        ],
-                        options: {
-                            legend             : {
-                                display: false
-                            },
-                            maintainAspectRatio: false,
-                            scales             : {
-                                xAxes: [
-                                    {
-                                        display: false
-                                    }
-                                ],
-                                yAxes: [
-                                    {
-                                        display: false
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                },
-                'wontFix'  : {
-                    'label': 'WON\'T FIX',
-                    'count': {
-                        '2W': 6,
-                        'LW': 3,
-                        'TW': 4
-                    },
-                    'chart': {
-                        '2W'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [5, 7, 4, 6, 5, 3, 2],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        'LW'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [6, 3, 7, 5, 5, 4, 7],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        'TW'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [6, 5, 4, 5, 7, 4, 7],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        options: {
-                            legend             : {
-                                display: false
-                            },
-                            maintainAspectRatio: false,
-                            scales             : {
-                                xAxes: [
-                                    {
-                                        display: false
-                                    }
-                                ],
-                                yAxes: [
-                                    {
-                                        display: false
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                },
-                'needsTest': {
-                    'label': 'NEEDS TEST',
-                    'count': {
-                        '2W': 10,
-                        'LW': 7,
-                        'TW': 8
-                    },
-                    'chart': {
-                        '2W'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [6, 5, 4, 5, 7, 4, 7],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        'LW'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [5, 7, 8, 8, 6, 4, 1],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        'TW'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [6, 3, 7, 5, 5, 4, 7],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        options: {
-                            legend             : {
-                                display: false
-                            },
-                            maintainAspectRatio: false,
-                            scales             : {
-                                xAxes: [
-                                    {
-                                        display: false
-                                    }
-                                ],
-                                yAxes: [
-                                    {
-                                        display: false
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                },
-                'fixed'    : {
-                    'label': 'FIXED',
-                    'count': {
-                        '2W': 21,
-                        'LW': 17,
-                        'TW': 14
-                    },
-                    'chart': {
-                        '2W'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [5, 7, 8, 8, 6, 4, 1],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        'LW'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [6, 5, 4, 5, 7, 4, 7],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        'TW'   : {
-                            datasets: [
-                                {
-                                    label          : 'Created',
-                                    data           : [5, 7, 4, 6, 5, 3, 2],
-                                    fill           : true,
-                                    backgroundColor: '#42BFF7',
-                                    pointRadius    : 0,
-                                    pointHitRadius : 20,
-                                    borderWidth    : 0
-                                }
-                            ],
-                            labels  : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        options: {
-                            legend             : {
-                                display: false
-                            },
-                            maintainAspectRatio: false,
-                            scales             : {
-                                xAxes: [
-                                    {
-                                        display: false
-                                    }
-                                ],
-                                yAxes: [
-                                    {
-                                        display: false
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                }
-            }
-        },
+        },      
         'widget6'      : {
             'title'       : 'Task Distribution',
             'ranges'      : {
@@ -758,53 +197,13 @@ const projectDashboardAppDB = {
                         'title': 'Final Thoughts',
                         'time' : '2:00 PM'
                     },
-                    {
-                        'id'   : 6,
-                        'title': 'Jane\'s Birthday Party',
-                        'time' : '19:30 PM'
-                    },
-                    {
-                        'id'   : 7,
-                        'title': 'Overseer\'s Retirement Party',
-                        'time' : '21:30 PM'
-                    }
                 ],
                 'TM': [
                     {
                         'id'   : 1,
-                        'title': 'Marketing Meeting',
+                        'title': 'Jump Thanos',
                         'time' : '09:00 AM'
                     },
-                    {
-                        'id'   : 2,
-                        'title': 'Public Announcement',
-                        'time' : '11:00 AM'
-                    },
-                    {
-                        'id'   : 3,
-                        'title': 'Lunch',
-                        'time' : '12:10 PM'
-                    },
-                    {
-                        'id'   : 4,
-                        'title': 'Meeting with Beta Testers',
-                        'time' : '15:00 AM'
-                    },
-                    {
-                        'id'   : 5,
-                        'title': 'Live Stream',
-                        'time' : '17:30 PM'
-                    },
-                    {
-                        'id'   : 6,
-                        'title': 'Release Party',
-                        'time' : '19:30 PM'
-                    },
-                    {
-                        'id'   : 7,
-                        'title': 'CEO\'s Party',
-                        'time' : '22:30 PM'
-                    }
                 ]
             }
         },
@@ -815,7 +214,7 @@ const projectDashboardAppDB = {
                 'columns': [
                     {
                         'id'   : 'avatar',
-                        'title': ''
+                        'title': 'URL'
                     },
                     {
                         'id'   : 'name',
@@ -840,7 +239,7 @@ const projectDashboardAppDB = {
                         'cells': [
                             {
                                 id   : 'avatar',
-                                value: 'assets/images/avatars/Brandon.jpg'
+                                value: 'assets/images/avatars/Brandon.png'
                             },
                             {
                                 id   : 'name',
@@ -865,7 +264,7 @@ const projectDashboardAppDB = {
                         'cells': [
                             {
                                 id   : 'avatar',
-                                value: 'assets/images/avatars/Ryan.jpg'
+                                value: 'assets/images/avatars/Ryan.png'
                             },
                             {
                                 id   : 'name',
@@ -890,7 +289,7 @@ const projectDashboardAppDB = {
                         'cells': [
                             {
                                 id   : 'avatar',
-                                value: 'assets/images/avatars/Victoria.jpg'
+                                value: 'assets/images/avatars/Victoria.png'
                             },
                             {
                                 id   : 'name',
@@ -915,27 +314,23 @@ const projectDashboardAppDB = {
                         'cells': [
                             {
                                 id   : 'avatar',
-                                value: 'assets/images/avatars/andrew.jpg'
+                                value: 'assets/images/avatars/Ken.png'
                             },
                             {
                                 id   : 'name',
-                                value: 'Mark Turner'
+                                value: 'Ken Tran'
                             },
                             {
                                 id   : 'position',
-                                value: 'Recruiting Manager'
-                            },
-                            {
-                                id   : 'office',
-                                value: 'Neftegorsk'
+                                value: 'Routing/Backend'
                             },
                             {
                                 id   : 'email',
-                                value: 'mturner4a@mail.com'
+                                value: 'ken@github.com'
                             },
                             {
                                 id   : 'phone',
-                                value: '+01 139 803 9263'
+                                value: '+1-202-555-0118'
                             }
                         ]
                     },
@@ -944,50 +339,50 @@ const projectDashboardAppDB = {
         },
         'weatherWidget': {
             'locations'      : {
-                'NewYork': {
-                    'name'           : 'New York',
-                    'icon'           : 'rainy2',
+                'Philadelphia': {
+                    'name'           : 'Philadephia',
+                    'icon'           : 'sunny2',
                     'temp'           : {
-                        'C': '22',
-                        'F': '72'
+                        'C': '32',
+                        'F': '94'
                     },
                     'windSpeed'      : {
-                        'KMH': 12,
-                        'MPH': 7.5
+                        'KMH': 13,
+                        'MPH': 8
                     },
-                    'windDirection'  : 'NW',
+                    'windDirection'  : 'WSW',
                     'rainProbability': '98%',
                     'next3Days'      : [
                         {
                             'name': 'Sunday',
-                            'icon': 'rainy',
+                            'icon': 'sunny',
                             'temp': {
                                 'C': '21',
-                                'F': '70'
+                                'F': '87'
                             }
                         },
                         {
                             'name': 'Monday',
-                            'icon': 'cloudy',
+                            'icon': 'sunny',
                             'temp': {
                                 'C': '19',
-                                'F': '66'
+                                'F': '87'
                             }
                         },
                         {
                             'name': 'Tuesday',
-                            'icon': 'windy3',
+                            'icon': 'sunny',
                             'temp': {
                                 'C': '24',
-                                'F': '75'
+                                'F': '90'
                             }
                         }
                     ]
                 }
             },
-            'currentLocation': 'NewYork',
-            'tempUnit'       : 'C',
-            'speedUnit'      : 'KMH'
+            'currentLocation': 'Philadelphia',
+            'tempUnit'       : 'F',
+            'speedUnit'      : 'MPH'
         }
     },
     projects: [
