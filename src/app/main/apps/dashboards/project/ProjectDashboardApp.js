@@ -200,15 +200,7 @@ function ProjectDashboardApp(props)
                                 animation: "transition.slideUpBigIn"
                             }}
                         >
-                            <div className="widget flex w-full sm:w-1/2 p-12">
-                                <Widget8 widget={widgets.widget8}/>
-                            </div>
-                            <div className="widget flex w-full sm:w-1/2 p-12">
-                                <Widget9 widget={widgets.widget9}/>
-                            </div>
-                            <div className="widget flex w-full p-12">
-                                <Widget10 widget={widgets.widget10}/>
-                            </div>
+                            
                         </FuseAnimateGroup>
                     )}
                     {tabValue === 2 && (
