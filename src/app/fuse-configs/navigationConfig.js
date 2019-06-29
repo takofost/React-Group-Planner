@@ -1,5 +1,5 @@
-import {MaterialUIComponentsNavigation} from 'app/main/documentation/material-ui-components/MaterialUIComponentsNavigation';
-import {authRoles} from 'app/auth';
+// import {MaterialUIComponentsNavigation} from 'app/main/documentation/material-ui-components/MaterialUIComponentsNavigation';
+// import {authRoles} from 'app/auth';
 
 const navigationConfig = [
     {
@@ -8,26 +8,26 @@ const navigationConfig = [
         'type'    : 'group',
         'icon'    : 'apps',
         'children': [
-            {
-                'id'      : 'dashboards',
-                'title'   : 'Dashboards',
-                'type'    : 'collapse',
-                'icon'    : 'dashboard',
-                'children': [
-                    {
-                        'id'   : 'analytics-dashboard',
-                        'title': 'Analytics',
-                        'type' : 'item',
-                        'url'  : '/apps/dashboards/analytics'
-                    },
-                    {
-                        'id'   : 'project-dashboard',
-                        'title': 'Project',
-                        'type' : 'item',
-                        'url'  : '/apps/dashboards/project'
-                    }
-                ]
-            },
+            // {
+            //     'id'      : 'dashboards',
+            //     'title'   : 'Dashboards',
+            //     'type'    : 'collapse',
+            //     'icon'    : 'dashboard',
+            //     'children': [
+            //         {
+            //             'id'   : 'analytics-dashboard',
+            //             'title': 'Analytics',
+            //             'type' : 'item',
+            //             'url'  : '/apps/dashboards/analytics'
+            //         },
+            //         {
+            //             'id'   : 'project-dashboard',
+            //             'title': 'Project',
+            //             'type' : 'item',
+            //             'url'  : '/apps/dashboards/project'
+            //         }
+            //     ]
+            // },
             {
                 'id'   : 'calendar',
                 'title': 'Calendar',
@@ -104,11 +104,11 @@ const navigationConfig = [
                 'type' : 'item',
                 'icon' : 'check_box',
                 'url'  : '/apps/todo',
-                'badge': {
-                    'title': 3,
-                    'bg'   : 'rgb(255, 111, 0)',
-                    'fg'   : '#FFFFFF'
-                }
+                // 'badge': {
+                //     'title': false,
+                //     'bg'   : 'rgb(255, 111, 0)',
+                //     'fg'   : '#FFFFFF'
+                // }
             },
             // {
             //     'id'   : 'file-manager',
@@ -117,24 +117,24 @@ const navigationConfig = [
             //     'icon' : 'folder',
             //     'url'  : '/apps/file-manager'
             // },
-            {
-                'id'   : 'contacts',
-                'title': 'Contacts',
-                'type' : 'item',
-                'icon' : 'account_box',
-                'url'  : '/apps/contacts/all'
-            },
+            // {
+            //     'id'   : 'contacts',
+            //     'title': 'Contacts',
+            //     'type' : 'item',
+            //     'icon' : 'account_box',
+            //     'url'  : '/apps/contacts/all'
+            // },
             {
                 'id'   : 'chat',
                 'title': 'Chat',
                 'type' : 'item',
                 'icon' : 'chat',
                 'url'  : '/apps/chat',
-                'badge': {
-                    'title': 13,
-                    'bg'   : 'rgb(9, 210, 97)',
-                    'fg'   : '#FFFFFF'
-                }
+                // 'badge': {
+                //     'title': 13,
+                //     'bg'   : 'rgb(9, 210, 97)',
+                //     'fg'   : '#FFFFFF'
+                // }
             },
             {
                 'id'   : 'scrumboard',

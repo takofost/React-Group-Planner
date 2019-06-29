@@ -3,13 +3,12 @@ import {Icon, MenuItem, TextField} from '@material-ui/core';
 import {FuseAnimate} from '@fuse';
 
 const accounts = {
-    'creapond'    : 'johndoe@creapond.com',
-    'withinpixels': 'johndoe@withinpixels.com'
+    'brandonotero14'    : 'brandonotero14@gmail.com',
 };
 
 function TodoSidebarHeader()
 {
-    const [selectedAccount, setSelectedCount] = useState('creapond');
+    const [selectedAccount, setSelectedCount] = useState('brandonotero14');
 
     function handleAccountChange(ev)
     {

@@ -8,7 +8,7 @@ export const ProjectDashboardAppConfig = {
     },
     routes  : [
         {
-            path     : '/apps/dashboards/project',
+            path     : '/apps/dashboards/home',
             component: React.lazy(() => import('./ProjectDashboardApp'))
         }
     ]

@@ -1978,22 +1978,22 @@ const projectDashboardAppDB = {
         }
     },
     projects: [
-        {
-            'id'  : 1,
-            'name': 'ACME Corp. Backend App'
-        },
-        {
-            'id'  : 2,
-            'name': 'ACME Corp. Frontend App'
-        },
-        {
-            'id'  : 3,
-            'name': 'Creapond'
-        },
-        {
-            'id'  : 4,
-            'name': 'Withinpixels'
-        }
+        // {
+        //     'id'  : 1,
+        //     'name': 'ACME Corp. Backend App'
+        // },
+        // {
+        //     'id'  : 2,
+        //     'name': 'ACME Corp. Frontend App'
+        // },
+        // {
+        //     'id'  : 3,
+        //     'name': 'Creapond'
+        // },
+        // {
+        //     'id'  : 4,
+        //     'name': 'Withinpixels'
+        // }
     ]
 };
 
