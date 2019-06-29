@@ -8,26 +8,12 @@ const navigationConfig = [
         'type'    : 'group',
         'icon'    : 'apps',
         'children': [
-            // {
-            //     'id'      : 'dashboards',
-            //     'title'   : 'Dashboards',
-            //     'type'    : 'collapse',
-            //     'icon'    : 'dashboard',
-            //     'children': [
-            //         {
-            //             'id'   : 'analytics-dashboard',
-            //             'title': 'Analytics',
-            //             'type' : 'item',
-            //             'url'  : '/apps/dashboards/analytics'
-            //         },
-            //         {
-            //             'id'   : 'project-dashboard',
-            //             'title': 'Project',
-            //             'type' : 'item',
-            //             'url'  : '/apps/dashboards/project'
-            //         }
-            //     ]
-            // },
+            {
+                'id'   : 'project-dashboard',
+                'title': 'Home',
+                'type' : 'item',
+                'url'  : '/apps/home'
+            },
             {
                 'id'   : 'calendar',
                 'title': 'Calendar',
@@ -136,13 +122,13 @@ const navigationConfig = [
                 //     'fg'   : '#FFFFFF'
                 // }
             },
-            {
-                'id'   : 'scrumboard',
-                'title': 'Scrumboard',
-                'type' : 'item',
-                'icon' : 'assessment',
-                'url'  : '/apps/scrumboard'
-            },
+            // {
+            //     'id'   : 'scrumboard',
+            //     'title': 'Scrumboard',
+            //     'type' : 'item',
+            //     'icon' : 'assessment',
+            //     'url'  : '/apps/scrumboard'
+            // },
             {
                 'id'   : 'notes',
                 'title': 'Notes',

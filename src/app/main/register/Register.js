@@ -4,9 +4,9 @@ import {darken} from '@material-ui/core/styles/colorManipulator';
 import {FuseAnimate} from '@fuse';
 import {Link} from 'react-router-dom';
 import clsx from 'clsx';
-import FirebaseRegisterTab from './tabs/FirebaseRegisterTab';
+// import FirebaseRegisterTab from './tabs/FirebaseRegisterTab';
 import Auth0RegisterTab from './tabs/Auth0RegisterTab';
-import JWTRegisterTab from './tabs/JWTRegisterTab';
+// import JWTRegisterTab from './tabs/JWTRegisterTab';
 import {makeStyles} from '@material-ui/styles';
 
 const useStyles = makeStyles(theme => ({
@@ -37,14 +37,13 @@ function Register()
 
                 <FuseAnimate animation="transition.slideUpIn" delay={300}>
                     <Typography variant="h3" color="inherit" className="font-light">
-                        Welcome to the FUSE!
+                        Welcome to ORCHESTRATE!
                     </Typography>
                 </FuseAnimate>
 
                 <FuseAnimate delay={400}>
                     <Typography variant="subtitle1" color="inherit" className="max-w-512 mt-16">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper nisl erat, vel convallis elit fermentum pellentesque. Sed mollis velit
-                        facilisis facilisis.
+                        
                     </Typography>
                 </FuseAnimate>
             </div>
@@ -64,30 +63,18 @@ function Register()
                             className="mb-32"
                         >
                             <Tab
-                                icon={<img className="h-40 p-4 bg-black rounded-12" src="assets/images/logos/jwt.svg" alt="firebase"/>}
-                                className="min-w-0"
-                                label="JWT"
-                            />
-                            <Tab
-                                icon={<img className="h-40" src="assets/images/logos/firebase.svg" alt="firebase"/>}
-                                className="min-w-0"
-                                label="Firebase"
-                            />
-                            <Tab
                                 icon={<img className="h-40" src="assets/images/logos/auth0.svg" alt="auth0"/>}
                                 className="min-w-0"
                                 label="Auth0"
                             />
                         </Tabs>
 
-                        {selectedTab === 0 && <JWTRegisterTab/>}
-                        {selectedTab === 1 && <FirebaseRegisterTab/>}
-                        {selectedTab === 2 && <Auth0RegisterTab/>}
+                       
+                        {selectedTab === 0 && <Auth0RegisterTab/>}
 
                         <div className="flex flex-col items-center justify-center pt-32 pb-24">
                             <span className="font-medium">Already have an account?</span>
                             <Link className="font-medium" to="/login">Login</Link>
-                            <Link className="font-medium mt-8" to="/">Back to Dashboard</Link>
                         </div>
 
                         <div className="flex flex-col items-center">

@@ -1931,50 +1931,50 @@ const projectDashboardAppDB = {
         },
         'weatherWidget': {
             'locations'      : {
-                'NewYork': {
-                    'name'           : 'New York',
+                'Philadelphia': {
+                    'name'           : 'Philadelphia',
                     'icon'           : 'rainy2',
                     'temp'           : {
                         'C': '22',
                         'F': '72'
                     },
                     'windSpeed'      : {
-                        'KMH': 12,
-                        'MPH': 7.5
+                        'KMH': 17.5,
+                        'MPH': 12
                     },
                     'windDirection'  : 'NW',
-                    'rainProbability': '98%',
+                    'rainProbability': '40%',
                     'next3Days'      : [
                         {
-                            'name': 'Sunday',
-                            'icon': 'rainy',
+                            'name': 'Saturday',
+                            'icon': 'rainy2',
                             'temp': {
-                                'C': '21',
-                                'F': '70'
+                                'C': '34',
+                                'F': '94'
+                            }
+                        },
+                        {
+                            'name': 'Sunday',
+                            'icon': 'sunny',
+                            'temp': {
+                                'C': '30',
+                                'F': '86'
                             }
                         },
                         {
                             'name': 'Monday',
                             'icon': 'cloudy',
                             'temp': {
-                                'C': '19',
-                                'F': '66'
-                            }
-                        },
-                        {
-                            'name': 'Tuesday',
-                            'icon': 'windy3',
-                            'temp': {
-                                'C': '24',
-                                'F': '75'
+                                'C': '31',
+                                'F': '88'
                             }
                         }
                     ]
                 }
             },
-            'currentLocation': 'NewYork',
-            'tempUnit'       : 'C',
-            'speedUnit'      : 'KMH'
+            'currentLocation': 'Philadelphia',
+            'tempUnit'       : 'F',
+            'speedUnit'      : 'MPH'
         }
     },
     projects: [

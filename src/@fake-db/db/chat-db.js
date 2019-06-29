@@ -6,181 +6,31 @@ const chatDb = {
     contacts: [
         {
             'id'    : '5725a680b3249760ea21de52',
-            'name'  : 'Alice Freeman',
-            'avatar': 'assets/images/avatars/alice.jpg',
+            'name'  : 'Victoria Nguyen',
+            'avatar': 'assets/images/avatars/victoria.png',
             'status': 'online',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-            'unread': '2'
+            'mood'  : 'So what are we going to do about socket.io ???'
         },
         {
             'id'    : '5725a680606588342058356d',
-            'name'  : 'Arnold',
-            'avatar': 'assets/images/avatars/Arnold.jpg',
-            'status': 'do-not-disturb',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-            'unread': '3'
+            'name'  : 'Ryan Halfpenny',
+            'avatar': 'assets/images/avatars/ryan.png',
+            'status': 'online',
+            'mood'  : 'I finished all of the front-end stuff...'
         },
         {
             'id'    : '5725a68009e20d0a9e9acf2a',
-            'name'  : 'Barrera',
-            'avatar': 'assets/images/avatars/Barrera.jpg',
-            'status': 'do-not-disturb',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-            'unread': '1'
+            'name'  : 'Ken Tran',
+            'avatar': 'assets/images/avatars/ken.png',
+            'status': 'online',
+            'mood'  : 'Back-end is working now, whats next ?'
         },
         {
             'id'    : '5725a6809fdd915739187ed5',
-            'name'  : 'Blair',
-            'avatar': 'assets/images/avatars/Blair.jpg',
-            'status': 'offline',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a68007920cf75051da64',
-            'name'  : 'Boyle',
-            'avatar': 'assets/images/avatars/Boyle.jpg',
-            'status': 'offline',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a68031fdbb1db2c1af47',
-            'name'  : 'Christy',
-            'avatar': 'assets/images/avatars/Christy.jpg',
-            'status': 'offline',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a680bc670af746c435e2',
-            'name'  : 'Copeland',
-            'avatar': 'assets/images/avatars/Copeland.jpg',
+            'name'  : 'Brandon',
+            'avatar': 'assets/images/avatars/brandon.png',
             'status': 'online',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a680e7eb988a58ddf303',
-            'name'  : 'Estes',
-            'avatar': 'assets/images/avatars/Estes.jpg',
-            'status': 'away',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a680dcb077889f758961',
-            'name'  : 'Harper',
-            'avatar': 'assets/images/avatars/Harper.jpg',
-            'status': 'offline',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a6806acf030f9341e925',
-            'name'  : 'Helen',
-            'avatar': 'assets/images/avatars/Helen.jpg',
-            'status': 'away',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a680ae1ae9a3c960d487',
-            'name'  : 'Henderson',
-            'avatar': 'assets/images/avatars/Henderson.jpg',
-            'status': 'offline',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a680b8d240c011dd224b',
-            'name'  : 'Josefina',
-            'avatar': 'assets/images/avatars/Josefina.jpg',
-            'status': 'online',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a68034cb3968e1f79eac',
-            'name'  : 'Katina',
-            'avatar': 'assets/images/avatars/Katina.jpg',
-            'status': 'away',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a6801146cce777df2a08',
-            'name'  : 'Lily',
-            'avatar': 'assets/images/avatars/Lily.jpg',
-            'status': 'do-not-disturb',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a6808a178bfd034d6ecf',
-            'name'  : 'Mai',
-            'avatar': 'assets/images/avatars/Mai.jpg',
-            'status': 'away',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a680653c265f5c79b5a9',
-            'name'  : 'Nancy',
-            'avatar': 'assets/images/avatars/Nancy.jpg',
-            'status': 'do-not-disturb',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a680bbcec3cc32a8488a',
-            'name'  : 'Nora',
-            'avatar': 'assets/images/avatars/Nora.jpg',
-            'status': 'do-not-disturb',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a6803d87f1b77e17b62b',
-            'name'  : 'Odessa',
-            'avatar': 'assets/images/avatars/Odessa.jpg',
-            'status': 'away',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a680e87cb319bd9bd673',
-            'name'  : 'Reyna',
-            'avatar': 'assets/images/avatars/Reyna.jpg',
-            'status': 'offline',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a6802d10e277a0f35775',
-            'name'  : 'Shauna',
-            'avatar': 'assets/images/avatars/Shauna.jpg',
-            'status': 'online',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a680aef1e5cf26dd3d1f',
-            'name'  : 'Shepard',
-            'avatar': 'assets/images/avatars/Shepard.jpg',
-            'status': 'online',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a680cd7efa56a45aea5d',
-            'name'  : 'Tillman',
-            'avatar': 'assets/images/avatars/Tillman.jpg',
-            'status': 'do-not-disturb',
-            'mood'  : ''
-        },
-        {
-            'id'    : '5725a680fb65c91a82cb35e2',
-            'name'  : 'Trevino',
-            'avatar': 'assets/images/avatars/Trevino.jpg',
-            'status': 'away',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a68018c663044be49cbf',
-            'name'  : 'Tyson',
-            'avatar': 'assets/images/avatars/Tyson.jpg',
-            'status': 'do-not-disturb',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
-        },
-        {
-            'id'    : '5725a6809413bf8a0a5272b1',
-            'name'  : 'Velazquez',
-            'avatar': 'assets/images/avatars/Velazquez.jpg',
-            'status': 'online',
-            'mood'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
+            'mood'  : 'I need your help ASAP !'
         }
     ],
     chats   : [
