@@ -3,7 +3,7 @@ import {FuseUtils} from '@fuse';
 
 const notesDB = {
     notes : [
-        
+      
     ],
     labels: [
         {

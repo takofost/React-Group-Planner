@@ -67,8 +67,8 @@ function Login()
                                 label="Auth0"
                             />
                         </Tabs>
-
                         
+
                         {selectedTab === 0 && <Auth0LoginTab/>}
 
                         <div className="flex flex-col items-center justify-center pt-32">

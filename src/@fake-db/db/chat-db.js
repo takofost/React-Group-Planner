@@ -37,66 +37,7 @@ const chatDb = {
         {
             'id'    : '1725a680b3249760ea21de52',
             'dialog': [
-                {
-                    'who'    : '5725a680b3249760ea21de52',
-                    'message': 'Quickly come to the meeting room 1B, we have a big server issue',
-                    'time'   : '2017-03-22T08:54:28.299Z'
-                },
-                {
-                    'who'    : '5725a6802d10e277a0f35724',
-                    'message': 'I’m having breakfast right now, can’t you wait for 10 minutes?',
-                    'time'   : '2017-03-22T08:55:28.299Z'
-                },
-                {
-                    'who'    : '5725a6802d10e277a0f35724',
-                    'message': 'I’m having breakfast right now, can’t you wait for 10 minutes?',
-                    'time'   : '2017-03-22T08:56:28.299Z'
-                },
-                {
-                    'who'    : '5725a680b3249760ea21de52',
-                    'message': 'We are losing money! Quick!',
-                    'time'   : '2017-03-22T09:00:28.299Z'
-                },
-                {
-                    'who'    : '5725a6802d10e277a0f35724',
-                    'message': 'It’s not my money, you know. I will eat my breakfast and then I will come to the meeting room.',
-                    'time'   : '2017-03-22T09:02:28.299Z'
-                },
-                {
-                    'who'    : '5725a680b3249760ea21de52',
-                    'message': 'You are the worst!',
-                    'time'   : '2017-03-22T09:05:28.299Z'
-                },
-                {
-                    'who'    : '5725a680b3249760ea21de52',
-                    'message': 'We are losing money! Quick!',
-                    'time'   : '2017-03-22T09:14:28.299Z'
-                },
-                {
-                    'who'    : '5725a680b3249760ea21de52',
-                    'message': 'You are the worst!',
-                    'time'   : '2017-03-22T09:16:28.299Z'
-                },
-                {
-                    'who'    : '5725a680b3249760ea21de52',
-                    'message': 'We are losing money! Quick!',
-                    'time'   : '2017-03-22T09:17:28.299Z'
-                },
-                {
-                    'who'    : '5725a6802d10e277a0f35724',
-                    'message': 'It’s not my money, you know. I will eat my breakfast and then I will come to the meeting room.',
-                    'time'   : '2017-03-22T09:20:28.299Z'
-                },
-                {
-                    'who'    : '5725a680b3249760ea21de52',
-                    'message': 'You are the worst!',
-                    'time'   : '2017-03-22T09:22:28.299Z'
-                },
-                {
-                    'who'    : '5725a680b3249760ea21de52',
-                    'message': 'We are losing money! Quick!',
-                    'time'   : '2017-03-22T09:25:28.299Z'
-                },
+
                 {
                     'who'    : '5725a6802d10e277a0f35724',
                     'message': 'It’s not my money, you know. I will eat my breakfast and then I will come to the meeting room.',
@@ -163,10 +104,10 @@ const chatDb = {
     user    : [
         {
             'id'      : '5725a6802d10e277a0f35724',
-            'name'    : 'John Doe',
-            'avatar'  : 'assets/images/avatars/profile.jpg',
+            'name'    : 'Brandon Otero',
+            'avatar'  : 'assets/images/avatars/Brandon.png',
             'status'  : 'online',
-            'mood'    : 'it\'s a status....not your diary...',
+            'mood'    : 'status',
             'chatList': [
                 {
                     'chatId'         : '1725a680b3249760ea21de52',
