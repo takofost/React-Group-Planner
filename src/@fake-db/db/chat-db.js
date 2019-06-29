@@ -25,13 +25,6 @@ const chatDb = {
             'status': 'online',
             'mood'  : 'Back-end is working now, whats next ?'
         },
-        {
-            'id'    : '5725a6809fdd915739187ed5',
-            'name'  : 'Brandon',
-            'avatar': 'assets/images/avatars/brandon.png',
-            'status': 'online',
-            'mood'  : 'I need your help ASAP !'
-        }
     ],
     chats   : [
         {

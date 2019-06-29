@@ -10,6 +10,7 @@ import {
   Typography
 } from "@material-ui/core";
 import { FuseAnimateGroup, FusePageSimple } from "@fuse";
+import {FuseCountdown, FuseHighlight} from '@fuse';
 import { useDispatch, useSelector } from "react-redux";
 import withReducer from "app/store/withReducer";
 import * as Actions from "./store/actions";
@@ -116,6 +117,15 @@ function ProjectDashboardApp(props) {
             <Typography className="py-0 sm:py-24" variant="h4">
               Welcome To Orchestrate!
             </Typography>
+            {/* <FuseHighlight component="pre" className="language-jsx">
+                        {
+                            
+                          
+                              <FuseCountdown endDate="2019-07-28" className="my-48"/>
+                            
+                            
+                        } 
+                    </FuseHighlight> */}
             <Hidden lgUp>
               <IconButton
                 onClick={ev => pageLayout.current.toggleRightSidebar()}
