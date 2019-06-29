@@ -1,3 +1,4 @@
+
 import mock from './../mock';
 import {FuseUtils} from '@fuse';
 
@@ -90,4 +91,5 @@ mock.onPost('/api/notes-app/remove-note').reply((request) => {
 
     return [200, notesDB.notes];
 });
+
 
