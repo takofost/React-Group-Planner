@@ -90,4 +90,3 @@ mock.onPost('/api/notes-app/remove-note').reply((request) => {
 
     return [200, notesDB.notes];
 });
-
